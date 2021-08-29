@@ -1,0 +1,10 @@
+{
+	"cafes":
+		[
+			{
+				"title": "YakiniQ Cafe",
+				"image": "/static/yakiniq.png",
+				"description": "This is my favorite Japantown cafe."
+			}
+		]
+}

@@ -8,6 +8,7 @@ from pydantic import BaseModel
 import random
 import mistune
 from dotenv import load_dotenv
+import json
 
 
 app = FastAPI()
@@ -21,9 +22,14 @@ templates = Jinja2Templates(directory="templates")
 async def index(request: Request):
     with open('README.md', 'r') as readme:
         readme_content = readme.read()
-        return templates.TemplateResponse("index.html", {
+    with open ('./static/top_cafes.json', 'r') as cafes:
+    	data = json.load(cafes)
+    	for i in data['cafes']:
+    		print(i)
+    	return templates.TemplateResponse("index.html", {
             "request": request,
-            "readme": mistune.html(readme_content)
+            "readme": mistune.html(readme_content),
+            "cafe": '/static/yakiniq.png',
         })
 
 if __name__ == "__main__":

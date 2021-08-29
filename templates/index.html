@@ -9,18 +9,33 @@
   </div>
   <div class="text-center mb-4">
     <div class="h1 text-center fancy-font">
-      A STARTER PROJECT FOR BUILDING <span class="text-main">FOREVER FREE</span> APPS
+      SAN FRANCISCO <span class="text-main">CAFES</span>
     </div>
-    <i>Your app, on the cloud, forever running, forever free.</i>
+    <i>Cafes for those looking for a moment.</i>
   </div>
   <p>
   {{ readme | safe }}
   </p>
 
+  <div class="row mb-3">
+    <div class="col-12 col-lg-6">
+      <div class="text-main">YakiniQ Cafe</div>
+      - Indoor <br/>
+      - Outdoor (minimal) <br/>
+      - Outlets <br/>
+      - Boardgames <br/>
+      - Sweets <br/>
+      - Savory <br/>
+      - Vibe: chill <br/>
+    </div>
+    <div class="col-12 col-lg-6">
+      <img src="{{ cafe }}" height="350" style="border: 5px solid pink;" />
+    </div>
+  </div>
+
   <div class="d-grid gap-2">
-    <button @click="location.href='https://github.com/czhu12/forever-free-cloud-app-starter'" class="btn btn-main btn-lg btn-block">
-      Fork on Github
-      <i class="ms-2 fab fa-github"></i>
+    <button @click="location.href='#'" class="btn btn-main btn-lg btn-block">
+      Find a cafe
     </button>
   </div>
 </div>

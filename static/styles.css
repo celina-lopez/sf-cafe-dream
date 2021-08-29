@@ -1,8 +1,8 @@
 body {
-  background-color: rgb(255, 253, 251);
+  background-color: #FFE5E2;
   height: 100%;
   font-family: "Lato";
-  color: #333;
+  color: #B34180;
 }
 
 .fancy-font {
@@ -10,17 +10,17 @@ body {
 }
 
 .text-main {
-  color: rgb(189, 93, 56);
+  color: #E36BAE;
 }
 
 .btn-main, .btn-main:visited {
-  background-color: rgb(189, 93, 56) !important;
-  border-color: rgb(189, 93, 56) !important;
+  background-color: #FFB4B4 !important;
+  border-color: #FFB4B4 !important;
   color: white;
 }
 .btn-main:hover, .btn-main:active {
-  background-color: rgb(170,84,50) !important;
-  border-color: rgb(170,84,50) !important;
+  background-color: #FF9292 !important;
+  border-color: #FF9292 !important;
   color: white;
 }
 .content {
