@@ -24,12 +24,11 @@ async def index(request: Request):
         readme_content = readme.read()
     with open ('./static/top_cafes.json', 'r') as cafes:
     	data = json.load(cafes)
-    	for i in data['cafes']:
-    		print(i)
     	return templates.TemplateResponse("index.html", {
             "request": request,
             "readme": mistune.html(readme_content),
             "cafe": '/static/yakiniq.png',
+            "data": data,
         })
 
 if __name__ == "__main__":

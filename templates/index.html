@@ -16,28 +16,24 @@
   <p>
   {{ readme | safe }}
   </p>
-
-  <div class="row mb-3">
-    <div class="col-12 col-lg-6">
-      <div class="text-main">YakiniQ Cafe</div>
-      - Indoor <br/>
-      - Outdoor (minimal) <br/>
-      - Outlets <br/>
-      - Boardgames <br/>
-      - Sweets <br/>
-      - Savory <br/>
-      - Vibe: chill <br/>
+  {% for cafe in data['cafes'] %}
+    <div class="row my-3">
+      <div class="col-12 col-lg-5 order-{{ loop.index % 2 }}">
+        <div class="text-main">{{ cafe['title'] }}</div>
+        {% for tag in cafe['tags'] %}
+          - {{tag}} <br/>
+        {% endfor %}
+      </div>
+      <div class="col-12 col-lg-7">
+        <img src="{{ cafe['image'] }}" height="350" style="border: 5px solid pink;" />
+      </div>
     </div>
-    <div class="col-12 col-lg-6">
-      <img src="{{ cafe }}" height="350" style="border: 5px solid pink;" />
-    </div>
-  </div>
+  {% endfor %} 
 
-  <div class="d-grid gap-2">
+  <div class="d-grid gap-2 my-3">
     <button @click="location.href='#'" class="btn btn-main btn-lg btn-block">
       Find a cafe
     </button>
   </div>
-</div>
 
 {% endblock %}

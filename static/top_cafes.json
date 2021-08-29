@@ -3,8 +3,40 @@
 		[
 			{
 				"title": "YakiniQ Cafe",
+				"image": "https://i.imgur.com/B3GaFla.png",
+				"description": "Near a the Kinokuniya bookstore. I sometimes grab a manga, walk over to the cafe, and sit outside with a Lavender latte.",
+				"tags": [ "Indoor", "Outdoor", "Outlets", "Boardgames" , "Sweets","Savory"]
+			},
+			{
+				"title": "Brioche Bakery cafe",
+				"image": "https://i.imgur.com/6a9YvFc.png",
+				"description": "Fantastic macarons and quiche.",
+				"tags": [ "Indoor", "Outdoor", "Sweets","Savory"]
+			},
+			{
+				"title": "Robin Cafe",
+				"image": "https://i.imgur.com/cCYMWh4.png",
+				"description": "This place also makes their own homemade juices!",
+				"tags": [ "Indoor", "Outdoor", "Outlets" , "Sweets","Savory"]
+			},
+			{
+				"title": "Holy Gelato",
+				"image": "https://i.imgur.com/GIQhmxn.png",
+				"description": "Near Golden Gate, nice to sit before I go down to the Botanical Garden.",
+				"tags": [ "Indoor", "Outlets" , "Sweets"]
+			},
+			{
+				"title": "Limoncello's",
 				"image": "/static/yakiniq.png",
-				"description": "This is my favorite Japantown cafe."
+				"description": "Great sandwiches! Come here for all of your Italian grocery shopping needs.",
+				"tags": [ "Indoor", "Outdoor", "Outlets", "Sweets","Savory"]
+			},
+			{
+				"title": "Cafe Greco",
+				"image": "/static/yakiniq.png",
+				"description": "My favorite Little Italy cafe.",
+				"tags": [ "Indoor", "Outdoor", "Sweets","Savory"]
 			}
+			
 		]
 }
