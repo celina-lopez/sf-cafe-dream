@@ -20,13 +20,10 @@ templates = Jinja2Templates(directory="templates")
 
 @app.get("/")
 async def index(request: Request):
-    with open('README.md', 'r') as readme:
-        readme_content = readme.read()
     with open ('./static/top_cafes.json', 'r') as cafes:
     	data = json.load(cafes)
     	return templates.TemplateResponse("index.html", {
             "request": request,
-            "readme": mistune.html(readme_content),
             "cafe": '/static/yakiniq.png',
             "data": data,
         })
