@@ -13,6 +13,7 @@ body {
   color: #E36BAE;
 }
 
+
 .btn-main, .btn-main:visited {
   background-color: #FFB4B4 !important;
   border-color: #FFB4B4 !important;
@@ -25,4 +26,24 @@ body {
 }
 .content {
   max-width: 600px;
+}
+
+.bg-0 {
+  background: #FFDEDE
+}
+
+.bg-1 {
+  background: #FCF0C8
+}
+
+.bg-2 {
+  background: #E4FBFF
+}
+
+.bg-3 {
+  background: #F2F4CB
+}
+
+.bg-4 {
+  background: #FFE194
 }
