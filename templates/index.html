@@ -24,7 +24,11 @@
         <div class="card mt-auto" style="border: none;border-radius: 0px;min-height:150px;">
           <div class="card-body">
             <div class="fancy-font h6">Explore YankiniQ</div>
-            <a href="#" class="btn btn-main btn-block"><i class="far fa-map"></i> Map</a>
+            <div class="mb-1">
+              <span class="ps-0 badge text-main"><i class="fas fa-map-marker-alt"></i> {{cafe['location']}}</span>
+            </div>
+            <a href="{{ cafe['map'] }}" target="_blank" class="btn btn-main btn-block" style="border-radius: 0px;
+    padding: 10px 20px 10px 20px;"><i class="far fa-map"></i> Map</a>
           </div>
         </div>
       </div>
